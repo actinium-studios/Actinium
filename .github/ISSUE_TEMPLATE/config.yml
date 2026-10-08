@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Docs
+    url: https://docs.actinium.top/Actinium/gettingStarted.html
+    about: Read docs before opening a issue!
+  - name: Discord
+    url: https://discord.gg/VeKXskHksh
+    about: Join our Discord server for support or to just chat!
