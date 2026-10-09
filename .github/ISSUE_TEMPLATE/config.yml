@@ -6,6 +6,3 @@ contact_links:
   - name: Discord
     url: https://discord.gg/VeKXskHksh
     about: Join our Discord server for support or to just chat!
-  - name: Report a security vulnerability
-    url: https://github.com/actinium-studios/Actinium/security/advisories/new
-    about: Please report security issues privately here, not in a public issue.
