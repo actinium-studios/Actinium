@@ -133,11 +133,15 @@ impl MenuBarState {
 
                 ui.menu_button("Help", |ui| {
                     if ui.button("Documentation").clicked() {
-                        let _ = open::that("https://docs.syrupstudios.lol/Actinium/gettingStarted.html");
+                        let _ = open::that("https://docs.actinium.top/Actinium/gettingStarted.html");
                         ui.close_menu();
                     }
                     if ui.button("Report an Issue").clicked() {
-                        let _ = open::that("https://github.com/SyrupStudio/Actinium/issues");
+                        let _ = open::that("https://github.com/actinium-studios/Actinium/issues");
+                        ui.close_menu();
+                    }
+                    if ui.button("Report a Security Vulnerability").clicked() {
+                        let _ = open::that("https://github.com/actinium-studios/Actinium/security/advisories/new");
                         ui.close_menu();
                     }
                     ui.separator();

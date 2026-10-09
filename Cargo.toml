@@ -3,20 +3,20 @@ name = "Actinium"
 version = "0.0.4"
 license = "MPL-2.0"
 description = "Actinium is a game engine written in Rust, designed for creating 2D and 3D games with ease. It provides a robust framework for game development, including rendering, physics, input handling, and more."
-documentation = "https://docs.syrupstudios.lol"
+documentation = "https://docs.actinium.top"
 authors = [
-  "Syrup Studios",
+  "Actinium Studios",
   "Pancakse <me@pancakse.dev>"
 ]
 edition = "2024"
 
 [package.metadata.wix]
 eula = "eula.rtf"
-help-url = "https://docs.syrupstudios.lol"
+help-url = "https://docs.actinium.top"
 
 [package.metadata.bundle]
 name = "Actinium"
-identifier = "dev.syrupstudios.actinium"
+identifier = "top.actinium.actinium"
 icon = ["assets/icon.icns"]
 copyright = "Copyright (c) 2026 Syrup Studios"
 category = "public.app-category.developer-tools"

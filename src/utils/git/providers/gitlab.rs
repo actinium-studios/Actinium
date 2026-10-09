@@ -194,18 +194,18 @@ fn keyring_user(base_url: &str) -> String {
 }
 
 pub fn save_token(base_url: &str, token: &str) -> Result<(), String> {
-    let entry = keyring::Entry::new("lol.syrupstudios.actinium", &keyring_user(base_url))
+    let entry = keyring::Entry::new("top.actinium.actinium", &keyring_user(base_url))
         .map_err(|e| e.to_string())?;
     entry.set_password(token).map_err(|e| e.to_string())
 }
 
 pub fn load_token(base_url: &str) -> Option<String> {
-    let entry = keyring::Entry::new("lol.syrupstudios.actinium", &keyring_user(base_url)).ok()?;
+    let entry = keyring::Entry::new("top.actinium.actinium", &keyring_user(base_url)).ok()?;
     entry.get_password().ok()
 }
 
 pub fn sign_out(base_url: &str) -> Result<(), String> {
-    let entry = keyring::Entry::new("lol.syrupstudios.actinium", &keyring_user(base_url))
+    let entry = keyring::Entry::new("top.actinium.actinium", &keyring_user(base_url))
         .map_err(|e| e.to_string())?;
     entry.delete_credential().map_err(|e| e.to_string())
 }

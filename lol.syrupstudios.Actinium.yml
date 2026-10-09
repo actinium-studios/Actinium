@@ -1,4 +1,4 @@
-app-id: lol.syrupstudios.Actinium
+app-id: top.actinium.Actinium
 runtime: org.freedesktop.Platform
 runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
@@ -26,11 +26,11 @@ modules:
     build-commands:
       - cargo --offline build --release || cargo build --release
       - install -Dm755 target/release/Actinium /app/bin/Actinium
-      - install -Dm644 assets/actinium.desktop /app/share/applications/lol.syrupstudios.Actinium.desktop
-      - install -Dm644 assets/logo128.png /app/share/icons/hicolor/128x128/apps/lol.syrupstudios.Actinium.png
-      - install -Dm644 assets/logo256.png /app/share/icons/hicolor/256x256/apps/lol.syrupstudios.Actinium.png
+      - install -Dm644 assets/actinium.desktop /app/share/applications/top.actinium.Actinium.desktop
+      - install -Dm644 assets/logo128.png /app/share/icons/hicolor/128x128/apps/top.actinium.Actinium.png
+      - install -Dm644 assets/logo256.png /app/share/icons/hicolor/256x256/apps/top.actinium.Actinium.png
       # If you have an AppStream metainfo file (needed later for Flathub):
-      # - install -Dm644 lol.syrupstudios.Actinium.metainfo.xml /app/share/metainfo/lol.syrupstudios.Actinium.metainfo.xml
+      # - install -Dm644 top.actinium.Actinium.metainfo.xml /app/share/metainfo/top.actinium.Actinium.metainfo.xml
     sources:
       - type: dir
         path: .

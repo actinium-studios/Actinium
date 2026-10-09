@@ -168,7 +168,7 @@ pub fn list_repos_async(token: String) -> Receiver<Result<Vec<RepoSummary>, Stri
     rx
 }
 
-const KEYRING_SERVICE: &str = "lol.syrupstudios.actinium";
+const KEYRING_SERVICE: &str = "top.actinium.actinium";
 const KEYRING_USER: &str = "github";
 
 pub fn save_token(token: &str) -> Result<(), String> {

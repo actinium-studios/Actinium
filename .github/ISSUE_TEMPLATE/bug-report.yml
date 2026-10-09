@@ -1,0 +1,123 @@
+name: Bug report
+description: Something in Actinium isn't working as expected
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! The more detail you give, the faster it can be fixed.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched existing issues and this hasn't been reported yet
+          required: true
+        - label: I'm using the latest release or the latest commit on the default branch
+          required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly. Screenshots or short clips are welcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps (or a minimal code sample) that trigger the bug.
+      placeholder: |
+        1. Create a scene with...
+        2. Call...
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Minimal code sample
+      description: If possible, paste the smallest snippet or link a repo that reproduces the problem.
+      render: rust
+
+  - type: input
+    id: engine-version
+    attributes:
+      label: Engine version or commit hash
+      placeholder: v0.3.1 or a1b2c3d
+    validations:
+      required: true
+
+  - type: input
+    id: rust-version
+    attributes:
+      label: Rust version
+      description: Output of `rustc --version`
+      placeholder: rustc 1.85.0 (4d91de4e4 2025-02-17)
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version / kernel version
+      description: |
+        Windows: Win+R, then `winver`. Linux: `uname -r` (and your distro/desktop environment). macOS: Apple menu, About This Mac.
+      placeholder: Windows 11 23H2 / Linux 6.8.0 (Ubuntu 24.04, Wayland) / macOS 14.5
+    validations:
+      required: true
+
+  - type: dropdown
+    id: graphics-api
+    attributes:
+      label: Graphics backend
+      description: Leave blank if the bug isn't rendering-related.
+      options:
+        - Vulkan
+        - DirectX 12
+        - Metal
+        - OpenGL
+        - Other / not sure
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU and driver version
+      description: Only needed for graphics or performance issues.
+      placeholder: NVIDIA RTX 3060, driver 560.35 (also state if you're usng proprietary or open-source drivers.)
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, panic output, or backtrace
+      description: Run with `RUST_BACKTRACE=1` (or `full`) if it panics.
+      render: shell
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Workarounds you found, related issues, when it started happening, etc.
