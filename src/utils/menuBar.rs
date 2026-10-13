@@ -140,10 +140,6 @@ impl MenuBarState {
                         let _ = open::that("https://github.com/actinium-studios/Actinium/issues");
                         ui.close_menu();
                     }
-                    if ui.button("Report a Security Vulnerability").clicked() {
-                        let _ = open::that("https://github.com/actinium-studios/Actinium/security/advisories/new");
-                        ui.close_menu();
-                    }
                     ui.separator();
                     if ui.button("About Actinium").clicked() {
                         self.show_about = true;
