@@ -8,10 +8,10 @@ Logo credits to @AveryDoesMagic
 
 **⚠️ Actinium is currently in development.**
 
-[![Release](https://img.shields.io/github/v/release/SyrupStudio/Actinium?include_prereleases)](https://github.com/SyrupStudio/Actinium/releases)
+[![Release](https://img.shields.io/github/v/release/actinium-studios/Actinium?include_prereleases)](https://github.com/actinium-studios/Actinium/releases)
 [![License: MPL-2.0](https://img.shields.io/badge/License-MPL_2.0-blue.svg)](https://opensource.org/licenses/MPL-2.0)
-[![Issues](https://img.shields.io/github/issues/SyrupStudio/Actinium)](https://github.com/SyrupStudio/Actinium/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/SyrupStudio/Actinium)](https://github.com/SyrupStudio/Actinium/commits/main)
+[![Issues](https://img.shields.io/github/issues/actinium-studios/Actinium)](https://github.com/SyrupStudio/Actinium/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/actinium-studios/Actinium)](https://github.com/actinium-studios/Actinium/commits/main)
 [![Rust](https://img.shields.io/badge/Rust-1.85%2B-orange.svg)](https://www.rust-lang.org/)
 [![Platforms](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)](#compiling)
 
