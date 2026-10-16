@@ -35,7 +35,7 @@ Actinium is a game engine written in Rust and designed for building 2D and 3D ga
 ### 1) Clone the repo
 
 ```bash
-git clone https://github.com/SyrupStudio/Actinium.git
+git clone https://github.com/actinium-studios/Actinium.git
 cd Actinium
 ```
 
