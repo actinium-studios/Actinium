@@ -1,5 +1,5 @@
 // discord.rs
-//  (c) 2026 Syrup Studios
+// (c) 2026 Actinium Studios
 // License:
 use discord_rich_presence::{activity, DiscordIpc, DiscordIpcClient};
 use std::sync::mpsc::{self, Sender};
