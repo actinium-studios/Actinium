@@ -286,5 +286,5 @@ fn main() {
     let mut app = App::new();
     event_loop.run_app(&mut app).expect("event loop error");
 
-    println!("Wsg guys");
+    println!("what is uppies guys");
 }
